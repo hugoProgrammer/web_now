@@ -1,0 +1,291 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+}
+
+header {
+    display:flex; /*Alinea los elementos*/
+    justify-content: space-between; /*Espacio entre los elementos*/
+    align-items: center;
+    padding: 5px;
+    background-color: #ffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    
+    
+
+}
+
+.Logo {
+    height: 150px;
+    width: auto;
+    padding: 0;
+}
+
+.Menu a {
+    text-decoration: none; /*Elimina el subrayado*/
+    color: #333;
+    margin-left: 20px; /*Espacio entre los enlaces*/
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 18px;
+    
+}
+
+.layout {
+width: 100%;
+
+display: flex;
+
+gap: 20px;
+
+justify-content: space-around;
+
+
+
+
+}
+
+.Text {
+  
+    
+    width: 50%;
+
+   
+    
+}
+
+.Text h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    margin-left: 280px;
+}
+
+.Text p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #555;
+    margin-left: 90px;
+    width: 70%;
+    text-align: justify;
+
+}
+
+.Image {
+    width: 30%;
+    height: 500px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    
+}
+
+.Image img {
+
+width: 100%;
+height: 100%;
+}
+
+.Contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px 80px;
+    background-color: #f7f9fc;
+}
+
+.contact-form {
+    width: min(100%, 700px);
+    background-color: #ffffff;
+    border: 1px solid #e0e6ef;
+    border-radius: 14px;
+    box-shadow: 0 10px 28px rgba(14, 42, 96, 0.12);
+    padding: 26px;
+    display: grid;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact-form label {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.05rem;
+    font-weight: bold;
+    color: #353a42;
+}
+
+.contact-form input,
+.contact-form textarea {
+    border: 1px solid #c5cdd9;
+    border-radius: 9px;
+    background-color: #fcfdff;
+    color: #222e3b;
+    font-size: 1rem;
+    padding: 12px 14px;
+    outline: none;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #3f7dff;
+    box-shadow: 0 0 0 3px rgba(63, 125, 255, 0.2);
+}
+
+.submit-btn {
+    cursor: pointer;
+    background-color: #2b67f2;
+    color: #ffffff;
+    border: none;
+    border-radius: 9px;
+    padding: 12px 18px;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #2056d0;
+    transform: translateY(-1px);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+/* Ajustes para tablets */
+@media (max-width: 1024px) {
+    .layout {
+        gap: 15px;
+    }
+
+    .Text {
+        width: 55%;
+    }
+
+    .Text h1 {
+        font-size: 32px;
+        margin-left: 200px;
+    }
+
+    .Text p {
+        font-size: 18px;
+        margin-left: 60px;
+        width: 80%;
+    }
+
+    .Image {
+        width: 35%;
+        height: 450px;
+        margin-right: 30px;
+    }
+
+    .contact-form {
+        width: min(100%, 600px);
+        padding: 22px;
+    }
+}
+
+/* Ajustes para móviles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .Logo {
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    .Menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .Menu a {
+        margin-left: 0;
+        font-size: 16px;
+    }
+
+    .layout {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .Text {
+        width: 90%;
+        margin-left: 0;
+    }
+
+    .Text h1 {
+        font-size: 28px;
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+
+    .Text p {
+        font-size: 16px;
+        margin-left: 0;
+        width: 100%;
+        line-height: 1.5;
+    }
+
+    .Image {
+        width: 90%;
+        height: auto;
+        margin-right: 0;
+        padding-top: 10px;
+    }
+
+    .Image img {
+        height: auto;
+        max-height: 300px;
+    }
+
+    .Contacto {
+        padding: 30px 15px 60px;
+    }
+
+    .contact-form {
+        width: 100%;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .contact-form label {
+        font-size: 1rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 10px 12px;
+        font-size: 0.95rem;
+    }
+
+    .submit-btn {
+        padding: 10px 16px;
+        font-size: 0.95rem;
+    }
+}
+
+.Mensaje {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+
+    padding: 30px;
+}
+
