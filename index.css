@@ -304,7 +304,7 @@ header {
 
  
 
-    .Contenedor1 h2, .textoC2 h2, .textoC3 h2 {
+     .textoC2 h2, .textoC3 h2 {
         font-size: 24px;
         margin: 30px 0 10px 0;
         padding-left: 0;
