@@ -69,6 +69,7 @@ header {
 
 }
 
+
 .Contenedor1 p {
     font-size: 18px;
     color: #333;
@@ -292,7 +293,7 @@ header {
     }
      .Contenedor1 h2 {
         font-size: 24px;
-        margin: 30px 15px 0 0;
+        margin: 30px 0 0 30px;
         text-align: center;
     }
 
